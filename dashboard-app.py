@@ -7,6 +7,18 @@ import calendar
 
 st.title("My Personal Finance Overview")
 
+st.markdown("""
+    <style>
+        .reportview-container {
+            margin-top: -2em;
+        }
+        #MainMenu {visibility: hidden;}
+        .stDeployButton {display:none;}
+        footer {visibility: hidden;}
+        #stDecoration {display:none;}
+    </style>
+""", unsafe_allow_html=True)
+
 @st.cache_data
 def load_data(path: str): 
     data = pd.read_csv(path)
