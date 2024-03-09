@@ -13,7 +13,7 @@ st.markdown("""
             margin-top: -2em;
         }
         #MainMenu {visibility: hidden;}
-        #stToolbarActions {visibility: hidden;}
+        .stHeader {display: none;}
         footer {visibility: hidden;}
         #stDecoration {display:none;}
     </style>
