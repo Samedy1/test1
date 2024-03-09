@@ -14,6 +14,7 @@ st.markdown("""
         }
         #MainMenu {visibility: hidden;}
         .stDeployButton {display:none;}
+        .stActionButtonIcon {display:none;}
         footer {visibility: hidden;}
         #stDecoration {display:none;}
     </style>
