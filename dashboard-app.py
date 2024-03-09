@@ -5,19 +5,19 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import calendar 
 
-st.title("My Personal Finance Overview")
-
 st.markdown("""
-    <style>
-        .reportview-container {
-            margin-top: -2em;
-        }
-        #MainMenu {visibility: hidden;}
-        #stHeader {display: none;}
-        footer {visibility: hidden;}
-        #stDecoration {display:none;}
-    </style>
-""", unsafe_allow_html=True)
+<style>
+    #MainMenu, header, footer {visibility: hidden;}
+
+    /* This code gets the first element on the sidebar,
+    and overrides its default styling */
+    section[data-testid="stSidebar"] div:first-child {
+        top: 0;
+        height: 100vh;
+    }
+</style>
+""",unsafe_allow_html=True)
+st.title("My Personal Finance Overview")
 
 @st.cache_data
 def load_data(path: str): 
